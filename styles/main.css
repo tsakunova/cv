@@ -38,6 +38,7 @@ body {
 
 .title-container {
     max-width: 90%;
+    text-transform: uppercase;
 }
 
 .burger-menu {
@@ -188,7 +189,7 @@ a:active,
 .date {
     display: block;
     font-weight: bold;
-    width: 150px;
+    width: 170px;
 }
 
 .with-date ul {
@@ -283,127 +284,6 @@ a:visited {
     transition: all 0.5s ease-in-out;
 }
 
-form {
-    margin: 30px 0;
-}
-input:-internal-autofill-selected{
-    background-color: #E4E3E1;
-}
-textarea {
-    display: block;
-    position: relative;
-    resize: none;
-    outline: none;
-    box-shadow: none;
-    box-sizing: border-box;
-    border-radius: 5px;
-    width: 80%;
-    height: 200px;
-    margin: 0 auto;
-    padding: 10px;
-    font-family: 'Poppins', sans-serif;
-    color: #48433D;
-    font-size: 20px;
-    background-color: #E4E3E1;
-    border: 1px solid #dcd3d3;
-}
-
-#check-form {
-    display: block;
-    cursor: pointer;
-    border: 1px solid #dcd3d3;
-    width: 300px;
-    font-size: 13px;
-    padding: 6px 0 4px 10px;
-    border: 1px solid #cecece;
-    background: #F6F6f6;
-    border-radius: 8px;
-    color: #48433D;
-    font-size: 20px;
-    text-transform: uppercase;
-    background: #e3d6ce;
-    box-shadow: inset 0px 20px 20px #e4e3e1;
-    border-radius: 8px;
-    padding: 8px 14px;
-    width: 120px;
-    margin: 20px auto;
-}
-
-#check-form:hover {
-    box-shadow: inset 0px -20px 20px #e4e3e1;
-}
-
-#check-form:focus {
-    outline: none;
-}
-
-.comment-hov {
-    position: relative;
-}
-
-.comment-hov::before {
-    content: 'Comment';
-    position: absolute;
-    background: #e3d6ce;
-    text-transform: uppercase;
-    left: 60%;
-    top: -250px;
-    padding: 10px 20px;
-    border-radius: 20px;
-    z-index: 5;
-    opacity: 0;
-    transition: ease opacity 0.5s;
-    transition-delay: .0s;
-}
-
-.comment-hov::after {
-    content: '';
-    position: absolute;
-    left: 65%;
-    top: -205px;
-    border: 10px solid transparent;
-    border-top: 10px solid #e3d6ce;
-    z-index: 6;
-    opacity: 0;
-    transition: ease opacity 0.5s;
-    transition-delay: .0s;
-
-}
-
-textarea:hover+.comment-hov::before,
-textarea:hover+.comment-hov::after{
-    opacity: 1;
-    transition-delay: .5s
-}
-
-textarea:focus+.comment-hov::before,
-textarea:focus+.comment-hov::after{
-    opacity: 0;
-    transition-delay: .5s
-}
-
-
-#telMess {
-    display: block;
-    font-size: 20px;
-    text-align: center;
-}
-
-input[type='tel'] {
-    width: 80%;
-    font-size: 20px;
-    padding: 6px 0 4px 10px;
-    border: 1px solid #dcd3d3;
-    background-color: #E4E3E1;
-    border-radius: 8px;
-    font-family: 'Poppins', sans-serif;
-    margin: 0 auto;
-    display: block;
-    outline: none;
-    box-shadow: none;
-    box-sizing: border-box;
-}
-
 .main-footer {
     display: flex;
     justify-content: flex-end;
@@ -445,6 +325,12 @@ input[type='tel'] {
 
 .footer-list img {
     width: 50%;
+}
+.with-date>li {
+    display: block;
+}
+.none .time-line>li{
+    margin-left: 20px;
 }
 
 
