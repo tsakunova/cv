@@ -189,7 +189,6 @@ a:active,
 .date {
     display: block;
     font-weight: bold;
-    width: 170px;
 }
 
 .with-date ul {
